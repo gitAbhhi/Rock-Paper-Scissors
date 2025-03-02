@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.comman{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    height: 80px;
+    font-size: 2rem;
+    color: black;
+    border-bottom: 2px solid white;
+    box-shadow: 0px  10px 20px rgb(212, 210, 210);
+}
+.choices{
+    margin-top: 25px;
+}
+.box{
+    height: 200px;
+    width: 350px;
+}
+.img{
+    box-shadow: 0px  10px 20px rgb(212, 210, 210);
+    height: 8vw;
+    width: 8vw;
+    object-fit: cover;   /*  this is imp */
+    border: 5px solid white;
+    border-radius: 50%; 
+}
+.img:hover{
+    box-shadow: none;
+    border: 5px solid black;
+}
+.shadow{
+    height: 40px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    color: black;
+    padding-top: 9px;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+.option{
+    height: 90px;   
+}
+.option p{
+    box-shadow: 0px  -1px 20px rgb(212, 210, 210);
+}
+.player{
+    height: 90px;   
+    justify-content: space-evenly;  
+}
+.res{
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+.result{
+    font-size: 1.5rem;
+}
+.winner{
+    box-shadow: 0px  -1px 20px green;
+    width: 500px;
+    margin-top: 30px;
+}
+.lose{
+    box-shadow: 0px  -1px 20px red;
+    width: 500px;
+    margin-top: 30px;
+}
+.draw{
+    box-shadow: 0px  -1px 20px yellow; 
+    width: 500px;  
+    margin-top: 30px;
+}
+.hide{
+    display: none;
+}
+@media (max-width:600px) {
+    .img{
+        width: 17%;
+        height: 70%;
+    }
+    .comman{
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .box{
+        height: 13vh;
+        /* width: 3vw; */
+    }
+    header{
+        font-size: 8vw;
+        font-weight: bold;
+    }
+    .shadow{
+        width: 80%;
+        font-size:6vw;
+    }
+    .res{
+        font-size: 4vw;
+    }
+    .result p{
+        font-size: 6vw;
+        display:flex ;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .option{
+        height:  3vw;   
+    } */
+}
