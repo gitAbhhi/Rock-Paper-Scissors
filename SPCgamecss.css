@@ -107,7 +107,7 @@ header{
     .res{
         font-size: 4vw;
     }
-    .result p{
+    .result{
         font-size: 6vw;
         display:flex ;
         flex-direction: column;
